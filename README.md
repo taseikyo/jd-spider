@@ -54,6 +54,11 @@
 
 <img src="https://i.loli.net/2017/10/09/59dafae4852be.png" alt="ScreenShots5.png" title="ScreenShots5.png" width="500" />
 
+### 不同价格区间商品数
+还是300-400这一区间的内存条比较火啊
+
+<img src="https://i.loli.net/2017/10/09/59db5431247a1.png" alt="ScreenShots7.png" title="ScreenShots7.png" />
+
 ## 使用说明
 首先把仓库克隆到本地然后安装所有用到的库
 ```
