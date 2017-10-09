@@ -91,3 +91,4 @@ FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '/r/n';
 `ERROR 1290 (HY000): The MySQL server is running with the --secure-file-priv option so it cannot execute this statement`
 
 ## LICENSE
+[MIT](https://github.com/LewisTian/RAM-JD/blob/master/LICENSE)
