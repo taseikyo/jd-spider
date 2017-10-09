@@ -82,8 +82,12 @@ CREATE TABLE ram(
 mysql> use $db;
 mysql> select * from ram;
 ```
-导出数据为CSV，注意，下面`$path`为MySQL的`my.ini`中`secure-file-priv`
+导出数据为CSV
 ```
 SELECT * FROM ram INTO OUTFILE '$path/ram.csv' 
 FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '/r/n';
 ```
+**注意，上面`$path`为MySQL的配置文件`my.ini`中`secure-file-priv`的路径，否则应该会报这个错误**
+`ERROR 1290 (HY000): The MySQL server is running with the --secure-file-priv option so it cannot execute this statement`
+
+## LICENSE
