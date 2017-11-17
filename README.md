@@ -67,7 +67,9 @@
 >> cd RAM-JD
 >> pip install -r requirements.txt
 ```
-然后修改`ram.py`中链接mysql数据库的若干变量（`$user` `$psw` `$db`），新建`ram`表用来存储数据，可参考下面建表语句
+由于将爬到的数据保存到 [MySQL](https://www.mysql.com/) 数据库, 请先安装好待用. (我安装的版本是5.7)
+
+然后修改 `ram.py` 中链接 MySQL 数据库的若干变量（`$user` `$psw` `$db`），新建 `ram` 表用来存储数据，可参考下面建表语句
 ```
 CREATE TABLE ram(
    id INT PRIMARY KEY AUTO_INCREMENT,
@@ -82,7 +84,7 @@ CREATE TABLE ram(
 ```    
 >> python ram.py
 ```
-最后登录MySQL数据库查看数据是否保存成功
+最后登录 MySQL 数据库查看数据是否保存成功
 ```
 >> mysql -u $user -p
 mysql> use $db;
@@ -93,7 +95,7 @@ mysql> select * from ram;
 SELECT * FROM ram INTO OUTFILE '$path/ram.csv' 
 FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '/r/n';
 ```
-**注意，上面`$path`为MySQL的配置文件`my.ini`中`secure-file-priv`的路径，否则应该会报这个错误**
+**注意，上面 `$path` 为 MySQL 的配置文件 `my.ini` 中 `secure-file-priv` 的路径，否则应该会报这个错误**
 `ERROR 1290 (HY000): The MySQL server is running with the --secure-file-priv option so it cannot execute this statement`
 
 ## LICENSE
