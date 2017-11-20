@@ -13,6 +13,7 @@
 ~~仅爬了按销量排行的 41 页数据, 共得到 **2460** 条数据.~~
 
 双十一之后更新(17/11/20), 爬了按销量排行的 48 页数据, 共得到 **2879** 条数据. 分析图没有修改, 工程量有点大(其实是懒), 多加了一些基于数据的分析.
+
 ![ram-1](https://github.com/LewisTian/RAM-JD/blob/master/images/ram-1.png)
 
 ### 存到MySQL数据库的数据
@@ -77,7 +78,7 @@
 
 ### 评论最高的10件内存条
 好巧哇, 我买的好像就是下面第一个内存条哇...
-![ram-4](https://github.com/LewisTian/RAM-JD/blob/master/images/ram-3.png)
+![ram-4](https://github.com/LewisTian/RAM-JD/blob/master/images/ram-4.png)
 
 ## 使用说明
 首先把仓库克隆到本地然后安装所有用到的库
