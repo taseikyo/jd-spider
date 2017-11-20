@@ -10,6 +10,11 @@
 为了了解一下内存条的情况，于是一天晚上(2017.10.08)在图书馆闲来无事，把京东上的[内存条](https://search.jd.com/Search?keyword=%E7%AC%94%E8%AE%B0%E6%9C%AC%E5%86%85%E5%AD%98%E6%9D%A1&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&psort=3&click=0)的数据按销量顺序全部爬下来了（说全部有点虚，总感觉漏掉了一些）
 
 ## 爬到的数据
+~~仅爬了按销量排行的 41 页数据, 共得到 **2460** 条数据.~~
+
+双十一之后更新(17/11/20), 爬了按销量排行的 48 页数据, 共得到 **2879** 条数据. 分析图没有修改, 工程量有点大(其实是懒), 多加了一些基于数据的分析.
+![ram-1](https://github.com/LewisTian/RAM-JD/blob/master/images/ram-1.png)
+
 ### 存到MySQL数据库的数据
 <img src="https://i.loli.net/2017/10/08/59da21bd58882.png" alt="ScreenShots1.PNG" title="ScreenShots1.PNG" />
 
@@ -63,6 +68,17 @@
 
 <img src="https://i.loli.net/2017/10/09/59db5431247a1.png" alt="ScreenShots7.png" title="ScreenShots7.png" />
 
+*17/11/20更新*
+### 价格最高/最低的10件内存条
+看着这价格, 我也只能看看...
+![ram-2](https://github.com/LewisTian/RAM-JD/blob/master/images/ram-2.png)
+上面贵的吓死人, 但下面这也太便宜了吧, 怕不是假的内存条的吧
+![ram-3](https://github.com/LewisTian/RAM-JD/blob/master/images/ram-3.png)
+
+### 评论最高的10件内存条
+好巧哇, 我买的好像就是下面第一个内存条哇...
+![ram-4](https://github.com/LewisTian/RAM-JD/blob/master/images/ram-3.png)
+
 ## 使用说明
 首先把仓库克隆到本地然后安装所有用到的库
 ```
@@ -91,7 +107,7 @@ CREATE TABLE ram(
 ```
 >> mysql -u $user -p
 mysql> use $db;
-mysql> select * from ram;
+mysql> select count(*) from ram;
 ```
 导出数据为CSV
 ```
