@@ -1,4 +1,4 @@
-# RAM-JD![python version](https://img.shields.io/badge/python-3.5-brightgreen.svg)
+# RAM-JD: Discussion of RAM (data from JD.com)
 ### 京东内存条数据分析:full_moon:
 > 人生苦短，我用Python！
 
