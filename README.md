@@ -1,5 +1,4 @@
-# RAM-JD: Discussion of RAM (data from JD.com)
-### 京东内存条数据分析:full_moon:
+## 京东内存条数据分析:full_moon:
 > 人生苦短，我用Python！
 
 ## 声明
