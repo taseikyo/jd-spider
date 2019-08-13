@@ -1,3 +1,5 @@
 requests
 bs4
 pymysql
+scrapy
+win32api
