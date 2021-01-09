@@ -13,7 +13,7 @@
 
 双十一之后更新(17/11/20), 爬了按销量排行的 48 页数据, 共得到 **2879** 条数据. 分析图没有修改, 工程量有点大(其实是懒), 多加了一些基于数据的分析.
 
-![ram-1](https://github.com/LewisTian/RAM-JD/blob/master/images/ram-1.png)
+![ram-1](images/ram-1.png)
 
 ### 存到MySQL数据库的数据
 <img src="https://i.loli.net/2017/10/08/59da21bd58882.png" alt="ScreenShots1.PNG" title="ScreenShots1.PNG" />
@@ -71,13 +71,13 @@
 *17/11/20更新*
 ### 价格最高/最低的10件内存条
 看着这价格, 我也只能看看...
-![ram-2](https://github.com/LewisTian/RAM-JD/blob/master/images/ram-2.png)
+![ram-2](images/ram-2.png)
 上面贵的吓死人, 但下面这也太便宜了吧, 怕不是假的内存条的吧
-![ram-3](https://github.com/LewisTian/RAM-JD/blob/master/images/ram-3.png)
+![ram-3](images/ram-3.png)
 
 ### 评论最高的10件内存条
 好巧哇, 我买的好像就是下面第一个内存条哇...
-![ram-4](https://github.com/LewisTian/RAM-JD/blob/master/images/ram-4.png)
+![ram-4](images/ram-4.png)
 
 ## 使用说明
 首先把仓库克隆到本地然后安装所有用到的库
@@ -118,4 +118,4 @@ FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '/r/n';
 `ERROR 1290 (HY000): The MySQL server is running with the --secure-file-priv option so it cannot execute this statement`
 
 ## LICENSE
-[MIT](https://github.com/LewisTian/RAM-JD/blob/master/LICENSE)
+Copyright (c) 2017 Lewis Tian. Licensed under the MIT license.
